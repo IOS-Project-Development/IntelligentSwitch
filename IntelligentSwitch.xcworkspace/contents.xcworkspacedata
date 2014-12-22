@@ -1,4 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <FileRef
+      location = "group:LICENSE">
+   </FileRef>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <Group
+      location = "group:&#x76f8;&#x5173;&#x8d44;&#x6599;"
+      name = "&#x76f8;&#x5173;&#x8d44;&#x6599;">
+      <FileRef
+         location = "group:android_cc3200_zigbee&#x534f;&#x8bae;&#x6587;&#x6863;_201401208.docx">
+      </FileRef>
+      <FileRef
+         location = "group:APP_UI_V0.1.docx">
+      </FileRef>
+      <Group
+         location = "group:UI&#x6548;&#x679c;&#x56fe;&#x7247;"
+         name = "UI&#x6548;&#x679c;&#x56fe;&#x7247;">
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-49-25.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-49-48.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-50-03.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-51-15.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-51-21.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-51-35.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-51-50.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-52-21.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-52-43.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-53-04.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-53-23.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-53-59.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-54-12.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-54-48.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-05-54-55.png">
+         </FileRef>
+         <FileRef
+            location = "group:Screenshot_2014-01-05-06-28-13.png">
+         </FileRef>
+         <FileRef
+            location = "group:Thumbs.db">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:IntelligentSwitchPro.xcodeproj">
+   </FileRef>
 </Workspace>

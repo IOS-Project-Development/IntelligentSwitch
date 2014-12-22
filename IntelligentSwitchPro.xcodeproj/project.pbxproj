@@ -14,11 +14,6 @@
 		958FC4151A4734C6000B008A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 958FC4141A4734C6000B008A /* main.m */; };
 		958FC4191A4734C6000B008A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 958FC4181A4734C6000B008A /* AppDelegate.m */; };
 		958FC4211A4734C6000B008A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958FC4201A4734C6000B008A /* Images.xcassets */; };
-		958FC4281A4734C6000B008A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958FC4271A4734C6000B008A /* XCTest.framework */; };
-		958FC4291A4734C6000B008A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958FC4081A4734C6000B008A /* Foundation.framework */; };
-		958FC42A1A4734C6000B008A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958FC40C1A4734C6000B008A /* UIKit.framework */; };
-		958FC4321A4734C6000B008A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 958FC4301A4734C6000B008A /* InfoPlist.strings */; };
-		958FC4341A4734C6000B008A /* IntelligentSwitchProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 958FC4331A4734C6000B008A /* IntelligentSwitchProTests.m */; };
 		958FC4501A47365B000B008A /* SlideNavigationContorllerAnimatorFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 958FC4421A47365B000B008A /* SlideNavigationContorllerAnimatorFade.m */; };
 		958FC4511A47365B000B008A /* SlideNavigationContorllerAnimatorScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 958FC4441A47365B000B008A /* SlideNavigationContorllerAnimatorScale.m */; };
 		958FC4521A47365B000B008A /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 958FC4461A47365B000B008A /* SlideNavigationContorllerAnimatorScaleAndFade.m */; };
@@ -37,16 +32,6 @@
 		958FC46E1A4756B4000B008A /* Main.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 958FC46D1A4756B4000B008A /* Main.Storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		958FC42B1A4734C6000B008A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 958FC3FD1A4734C6000B008A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 958FC4041A4734C6000B008A;
-			remoteInfo = IntelligentSwitchPro;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		958FC4051A4734C6000B008A /* IntelligentSwitchPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelligentSwitchPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		958FC4081A4734C6000B008A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,11 +44,7 @@
 		958FC4171A4734C6000B008A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		958FC4181A4734C6000B008A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		958FC4201A4734C6000B008A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		958FC4261A4734C6000B008A /* IntelligentSwitchProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelligentSwitchProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		958FC4271A4734C6000B008A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		958FC42F1A4734C6000B008A /* IntelligentSwitchProTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntelligentSwitchProTests-Info.plist"; sourceTree = "<group>"; };
-		958FC4311A4734C6000B008A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		958FC4331A4734C6000B008A /* IntelligentSwitchProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntelligentSwitchProTests.m; sourceTree = "<group>"; };
 		958FC4401A47365B000B008A /* SlideNavigationContorllerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimator.h; sourceTree = "<group>"; };
 		958FC4411A47365B000B008A /* SlideNavigationContorllerAnimatorFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorFade.h; sourceTree = "<group>"; };
 		958FC4421A47365B000B008A /* SlideNavigationContorllerAnimatorFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorFade.m; sourceTree = "<group>"; };
@@ -103,16 +84,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		958FC4231A4734C6000B008A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				958FC4281A4734C6000B008A /* XCTest.framework in Frameworks */,
-				958FC42A1A4734C6000B008A /* UIKit.framework in Frameworks */,
-				958FC4291A4734C6000B008A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -120,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				958FC40E1A4734C6000B008A /* IntelligentSwitchPro */,
-				958FC42D1A4734C6000B008A /* IntelligentSwitchProTests */,
 				958FC4071A4734C6000B008A /* Frameworks */,
 				958FC4061A4734C6000B008A /* Products */,
 			);
@@ -130,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				958FC4051A4734C6000B008A /* IntelligentSwitchPro.app */,
-				958FC4261A4734C6000B008A /* IntelligentSwitchProTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,24 +137,6 @@
 				958FC4111A4734C6000B008A /* InfoPlist.strings */,
 				958FC4141A4734C6000B008A /* main.m */,
 				958FC4161A4734C6000B008A /* IntelligentSwitchPro-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		958FC42D1A4734C6000B008A /* IntelligentSwitchProTests */ = {
-			isa = PBXGroup;
-			children = (
-				958FC4331A4734C6000B008A /* IntelligentSwitchProTests.m */,
-				958FC42E1A4734C6000B008A /* Supporting Files */,
-			);
-			path = IntelligentSwitchProTests;
-			sourceTree = "<group>";
-		};
-		958FC42E1A4734C6000B008A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				958FC42F1A4734C6000B008A /* IntelligentSwitchProTests-Info.plist */,
-				958FC4301A4734C6000B008A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -272,24 +223,6 @@
 			productReference = 958FC4051A4734C6000B008A /* IntelligentSwitchPro.app */;
 			productType = "com.apple.product-type.application";
 		};
-		958FC4251A4734C6000B008A /* IntelligentSwitchProTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 958FC43A1A4734C6000B008A /* Build configuration list for PBXNativeTarget "IntelligentSwitchProTests" */;
-			buildPhases = (
-				958FC4221A4734C6000B008A /* Sources */,
-				958FC4231A4734C6000B008A /* Frameworks */,
-				958FC4241A4734C6000B008A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				958FC42C1A4734C6000B008A /* PBXTargetDependency */,
-			);
-			name = IntelligentSwitchProTests;
-			productName = IntelligentSwitchProTests;
-			productReference = 958FC4261A4734C6000B008A /* IntelligentSwitchProTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -298,11 +231,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Carl;
-				TargetAttributes = {
-					958FC4251A4734C6000B008A = {
-						TestTargetID = 958FC4041A4734C6000B008A;
-					};
-				};
 			};
 			buildConfigurationList = 958FC4001A4734C6000B008A /* Build configuration list for PBXProject "IntelligentSwitchPro" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -318,7 +246,6 @@
 			projectRoot = "";
 			targets = (
 				958FC4041A4734C6000B008A /* IntelligentSwitchPro */,
-				958FC4251A4734C6000B008A /* IntelligentSwitchProTests */,
 			);
 		};
 /* End PBXProject section */
@@ -337,14 +264,6 @@
 				958FC4131A4734C6000B008A /* InfoPlist.strings in Resources */,
 				958FC4561A47365B000B008A /* menu-button@2x.png in Resources */,
 				958FC4661A473CCA000B008A /* animation.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		958FC4241A4734C6000B008A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				958FC4321A4734C6000B008A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,37 +288,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		958FC4221A4734C6000B008A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				958FC4341A4734C6000B008A /* IntelligentSwitchProTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		958FC42C1A4734C6000B008A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 958FC4041A4734C6000B008A /* IntelligentSwitchPro */;
-			targetProxy = 958FC42B1A4734C6000B008A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		958FC4111A4734C6000B008A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				958FC4121A4734C6000B008A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		958FC4301A4734C6000B008A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				958FC4311A4734C6000B008A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -503,46 +398,6 @@
 			};
 			name = Release;
 		};
-		958FC43B1A4734C6000B008A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IntelligentSwitchPro.app/IntelligentSwitchPro";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IntelligentSwitchPro/IntelligentSwitchPro-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "IntelligentSwitchProTests/IntelligentSwitchProTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		958FC43C1A4734C6000B008A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IntelligentSwitchPro.app/IntelligentSwitchPro";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IntelligentSwitchPro/IntelligentSwitchPro-Prefix.pch";
-				INFOPLIST_FILE = "IntelligentSwitchProTests/IntelligentSwitchProTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -560,15 +415,6 @@
 			buildConfigurations = (
 				958FC4381A4734C6000B008A /* Debug */,
 				958FC4391A4734C6000B008A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		958FC43A1A4734C6000B008A /* Build configuration list for PBXNativeTarget "IntelligentSwitchProTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				958FC43B1A4734C6000B008A /* Debug */,
-				958FC43C1A4734C6000B008A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
