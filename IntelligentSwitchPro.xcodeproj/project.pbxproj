@@ -30,6 +30,7 @@
 		958FC4691A473CCA000B008A /* rightMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 958FC4651A473CCA000B008A /* rightMenu.jpg */; };
 		958FC46C1A474F1F000B008A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 958FC46B1A474F1F000B008A /* HomeViewController.m */; };
 		958FC46E1A4756B4000B008A /* Main.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 958FC46D1A4756B4000B008A /* Main.Storyboard */; };
+		E72D50F71A47B737001A3F77 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E72D50F61A47B737001A3F77 /* HMSegmentedControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		958FC46A1A474F1F000B008A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		958FC46B1A474F1F000B008A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		958FC46D1A4756B4000B008A /* Main.Storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.Storyboard; sourceTree = "<group>"; };
+		E72D50F51A47B737001A3F77 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		E72D50F61A47B737001A3F77 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,7 @@
 		958FC40E1A4734C6000B008A /* IntelligentSwitchPro */ = {
 			isa = PBXGroup;
 			children = (
+				E72D50F31A47B737001A3F77 /* Lirbrary */,
 				958FC4611A473CCA000B008A /* Images */,
 				958FC4581A473686000B008A /* Helper Class */,
 				958FC43E1A47365B000B008A /* Source */,
@@ -203,6 +207,23 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		E72D50F31A47B737001A3F77 /* Lirbrary */ = {
+			isa = PBXGroup;
+			children = (
+				E72D50F41A47B737001A3F77 /* HMSegmentedControl */,
+			);
+			path = Lirbrary;
+			sourceTree = "<group>";
+		};
+		E72D50F41A47B737001A3F77 /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				E72D50F51A47B737001A3F77 /* HMSegmentedControl.h */,
+				E72D50F61A47B737001A3F77 /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -283,6 +304,7 @@
 				958FC4151A4734C6000B008A /* main.m in Sources */,
 				958FC4541A47365B000B008A /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
 				958FC45B1A47371E000B008A /* LeftMenuViewController.m in Sources */,
+				E72D50F71A47B737001A3F77 /* HMSegmentedControl.m in Sources */,
 				958FC4531A47365B000B008A /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				958FC46C1A474F1F000B008A /* HomeViewController.m in Sources */,
 			);
