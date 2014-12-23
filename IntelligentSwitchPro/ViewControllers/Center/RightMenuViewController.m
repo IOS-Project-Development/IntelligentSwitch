@@ -137,9 +137,9 @@
 			return;
 	}
 	
-//	[[SlideNavigationController sharedInstance] closeMenuWithCompletion:^{
-//		[SlideNavigationController sharedInstance].menuRevealAnimator = revealAnimator;
-//	}];
+	[[SlideNavigationController sharedInstance] closeMenuWithCompletion:^{
+		[SlideNavigationController sharedInstance].menuRevealAnimator = revealAnimator;
+	}];
 }
 
 - (void)didReceiveMemoryWarning

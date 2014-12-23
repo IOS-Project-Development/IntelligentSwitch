@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(20, 100, 100, 50)];
+    label.text = @"controller";
+    [self.view addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning {

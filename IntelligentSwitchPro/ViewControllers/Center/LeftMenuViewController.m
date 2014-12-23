@@ -13,7 +13,13 @@
 #import "SlideNavigationContorllerAnimatorScaleAndFade.h"
 #import "SlideNavigationContorllerAnimatorSlideAndFade.h"
 #import "PersonHeadView.h"
-
+#import "LoginViewController.h"
+#import "ControlViewController.h"
+#import "AboutViewController.h"
+#import "ClockViewController.h"
+#import "ExpandViewController.h"
+#import "SceneViewController.h"
+#import "SettingViewController.h"
 @interface LeftMenuViewController ()
 {
     
@@ -41,19 +47,20 @@
 {
     self.view.layer.borderWidth = .6;
     self.view.backgroundColor = [UIColor whiteColor];
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 10, 320, self.view.bounds.size.height) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, 320, self.view.bounds.size.height) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"leftMenu.jpg"]];
-	self.tableView.backgroundView = imageView;
+//    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"leftMenu.jpg"]];
+//	self.tableView.backgroundView = imageView;
     [self.view addSubview:self.tableView];
-
+    self.tableView.backgroundColor = [UIColor grayColor];
     
     //个人头像和名字
     PersonHeadView *person = [PersonHeadView instanceTextView];
     person.frame = CGRectMake (20, 30, 320, 50);
+    person.backgroundColor = [UIColor grayColor];
     person.nameLabel.text = @"Myname";
-    person.headerImage.image = [UIImage imageNamed:@"profile3.png"];
+    person.headerImage.image = [UIImage imageNamed:@"1.jpg"];
     self.tableView.tableHeaderView = person;
 }
 #pragma mark - UITableView Delegate & Datasrouce -
@@ -71,7 +78,6 @@
 	{
 		case 0:
 			cell.textLabel.text = @"Login";
-            cell.imageView.image = [UIImage imageNamed:@"profile3.png"];
 			break;
 			
 		case 1:
@@ -112,7 +118,7 @@
 			break;
 			
 		case 1:
-			
+            vc = [[ControlViewController alloc]init];
 			break;
 			
 		case 2:

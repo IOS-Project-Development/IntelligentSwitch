@@ -18,7 +18,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(20, 100, 50, 50)];
-    label.backgroundColor = [UIColor redColor];
+    label.text = @"login";
     [self.view addSubview:label];
 }
 

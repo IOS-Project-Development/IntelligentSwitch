@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SlideNavigationController.h"
-#import "LoginViewController.h"
+
 @interface LeftMenuViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, assign) BOOL slideOutAnimationEnabled;
 @end
