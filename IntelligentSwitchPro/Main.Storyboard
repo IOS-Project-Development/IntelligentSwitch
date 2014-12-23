@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tLo-Ae-OYA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tLo-Ae-OYA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Slide Navigation Controller-->
@@ -12,12 +13,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="E8F-3O-rXm" kind="relationship" relationship="rootViewController" id="ToJ-bW-EHe"/>
+                        <segue destination="58S-1I-PtU" kind="relationship" relationship="rootViewController" id="McA-Fd-nDn"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HGs-A1-LUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-881" y="-911"/>
+            <point key="canvasLocation" x="-1045" y="-920"/>
         </scene>
         <!--root-->
         <scene sceneID="plQ-Kh-LVZ">
@@ -47,7 +48,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DhL-UH-C8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-378" y="-911"/>
+            <point key="canvasLocation" x="-603" y="-1009"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="xNO-eI-gUm">
+            <objects>
+                <viewController id="58S-1I-PtU" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="95y-oz-uwa"/>
+                        <viewControllerLayoutGuide type="bottom" id="fAu-fU-PbI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qza-9r-xdA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EGN-HE-fJg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="215-qo-3Ln" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-565" y="-357"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Ifg-Nl-w3U">
@@ -66,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tir-cF-KNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="179" y="-911"/>
+            <point key="canvasLocation" x="-154" y="-999"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
