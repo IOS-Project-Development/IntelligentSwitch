@@ -1,26 +1,19 @@
 //
-//  LeftMenuViewController.m
+//  RightMenuViewController.m
 //  IntelligentSwitchPro
 //
 //  Created by winter on 14-12-22.
 //  Copyright (c) 2014年 Carl. All rights reserved.
 //
 
-#import "LeftMenuViewController.h"
-#import "LeftMenuViewController.h"
-#import "SlideNavigationContorllerAnimatorFade.h"
-#import "SlideNavigationContorllerAnimatorSlide.h"
-#import "SlideNavigationContorllerAnimatorScale.h"
-#import "SlideNavigationContorllerAnimatorScaleAndFade.h"
-#import "SlideNavigationContorllerAnimatorSlideAndFade.h"
-@interface LeftMenuViewController ()
-{
-    
-}
-@property (nonatomic, strong) UITableView* tableView;
+#import "RightMenuViewController.h"
+
+
+@interface RightMenuViewController ()
+@property (strong, nonatomic)UITableView * tableView;
 @end
 
-@implementation LeftMenuViewController
+@implementation RightMenuViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,28 +23,29 @@
     }
     return self;
 }
-
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+	[super viewDidLoad];
     [self initUI];
 }
 -(void)initUI
 {
+   
     self.view.layer.borderWidth = .6;
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(00, 0, 320, self.view.bounds.size.height) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(60, 0, 320, self.view.frame.size.height) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"leftMenu.jpg"]];
+	UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"rightMenu.jpg"]];
 	self.tableView.backgroundView = imageView;
     [self.view addSubview:self.tableView];
 }
+
+
 #pragma mark - UITableView Delegate & Datasrouce -
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return 4;
+	return 6;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
@@ -68,66 +62,84 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* cellIndentifier = @"Cell";
-	UITableViewCell * cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
     
+    
+    static NSString * cellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+	 
+	if (!cell)
+    {
+    cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
 	switch (indexPath.row)
 	{
 		case 0:
-			cell.textLabel.text = @"1";
+			cell.textLabel.text = @"None";
 			break;
 			
 		case 1:
-			cell.textLabel.text = @"2";
+			cell.textLabel.text = @"Slide";
 			break;
 			
 		case 2:
-			cell.textLabel.text = @"3";
+			cell.textLabel.text = @"Fade";
 			break;
 			
 		case 3:
-			cell.textLabel.text = @"4";
+			cell.textLabel.text = @"Slide And Fade";
 			break;
+			
+		case 4:
+			cell.textLabel.text = @"Scale";
+			break;
+			
+		case 5:
+			cell.textLabel.text = @"Scale And Fade";
+			break;
+            
 	}
-	
 	cell.backgroundColor = [UIColor clearColor];
-	
 	return cell;
+
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*
-	UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone"
-															 bundle: nil];
-	
-	UIViewController *vc ;
+	id <SlideNavigationContorllerAnimator> revealAnimator;
 	
 	switch (indexPath.row)
 	{
 		case 0:
-			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"HomeViewController"];
+			revealAnimator = nil;
 			break;
 			
 		case 1:
-			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"ProfileViewController"];
+			revealAnimator = [[SlideNavigationContorllerAnimatorSlide alloc] init];
 			break;
 			
 		case 2:
-			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"FriendsViewController"];
+			revealAnimator = [[SlideNavigationContorllerAnimatorFade alloc] init];
 			break;
 			
 		case 3:
-			[self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
-			[[SlideNavigationController sharedInstance] popToRootViewControllerAnimated:YES];
-			return;
+			revealAnimator = [[SlideNavigationContorllerAnimatorSlideAndFade alloc] initWithMaximumFadeAlpha:.8 fadeColor:[UIColor blackColor] andSlideMovement:100];
 			break;
+			
+		case 4:
+			revealAnimator = [[SlideNavigationContorllerAnimatorScale alloc] init];
+			break;
+			
+		case 5:
+			revealAnimator = [[SlideNavigationContorllerAnimatorScaleAndFade alloc] initWithMaximumFadeAlpha:.6 fadeColor:[UIColor blackColor] andMinimumScale:.8];
+			break;
+			
+		default:
+			return;
 	}
 	
-	[[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc
-															 withSlideOutAnimation:self.slideOutAnimationEnabled
-																	 andCompletion:nil];
-    */
+//	[[SlideNavigationController sharedInstance] closeMenuWithCompletion:^{
+//		[SlideNavigationController sharedInstance].menuRevealAnimator = revealAnimator;
+//	}];
 }
 
 - (void)didReceiveMemoryWarning
