@@ -20,8 +20,30 @@
     UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(20, 100, 100, 50)];
     label.text = @"controller";
     [self.view addSubview:label];
-}
+    // Segmented control with scrolling
+    CGFloat yDelta;
+    
+    yDelta = self.view.frame.size.height -40 ;
+    
+    HMSegmentedControl *segmentedControl1 = [[HMSegmentedControl alloc] initWithSectionTitles:@[@"One", @"Two", @"Three", @"Four", @"Five", @"Six", @"Seven", @"Eight"]];
+    segmentedControl1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
+    segmentedControl1.frame = CGRectMake(0,  yDelta, 320, 40);
+    segmentedControl1.segmentEdgeInset = UIEdgeInsetsMake(0, 10, 0, 10);
+    segmentedControl1.selectionStyle = HMSegmentedControlSelectionStyleFullWidthStripe;
+    segmentedControl1.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
+    [segmentedControl1 addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:segmentedControl1];
 
+}
+- (void)segmentedControlChangedValue:(HMSegmentedControl *)segmentedControl
+{
+    NSLog(@"Selected index %ld (via UIControlEventValueChanged)", (long)segmentedControl.selectedSegmentIndex);
+}
+#pragma mark - SlideNavigationController Methods -
+- (BOOL)slideNavigationControllerShouldDisplayRightMenu
+{
+    return YES;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

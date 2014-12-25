@@ -12,7 +12,6 @@
 		63E2722A1A4923CC0044E847 /* ControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E272151A4923CC0044E847 /* ControlViewController.m */; };
 		63E2722B1A4923CC0044E847 /* ExpandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E272181A4923CC0044E847 /* ExpandViewController.m */; };
 		63E2722E1A4923CC0044E847 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E2721F1A4923CC0044E847 /* LoginViewController.m */; };
-		63E272301A4923CC0044E847 /* SceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E272241A4923CC0044E847 /* SceneViewController.m */; };
 		63E272311A4923CC0044E847 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E272271A4923CC0044E847 /* SettingViewController.m */; };
 		63E272361A4923F40044E847 /* PersonHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E272341A4923F40044E847 /* PersonHeadView.m */; };
 		63E272371A4923F40044E847 /* PersonHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E272351A4923F40044E847 /* PersonHeadView.xib */; };
@@ -21,6 +20,8 @@
 		63E272441A4945B50044E847 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E2723F1A4945B50044E847 /* HomeViewController.m */; };
 		63E272451A4945B50044E847 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E272411A4945B50044E847 /* LeftMenuViewController.m */; };
 		63E272461A4945B50044E847 /* RightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E272431A4945B50044E847 /* RightMenuViewController.m */; };
+		63E272481A494B940044E847 /* 我的金象-头像.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E272471A494B940044E847 /* 我的金象-头像.png */; };
+		63E2724A1A4950850044E847 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E272491A4950850044E847 /* user.png */; };
 		958FC4091A4734C6000B008A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958FC4081A4734C6000B008A /* Foundation.framework */; };
 		958FC40B1A4734C6000B008A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958FC40A1A4734C6000B008A /* CoreGraphics.framework */; };
 		958FC40D1A4734C6000B008A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958FC40C1A4734C6000B008A /* UIKit.framework */; };
@@ -45,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63D52B7C1A4AB23600E789AC /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		63D52B7D1A4AB23600E789AC /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 		63E2720E1A4923CC0044E847 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		63E2720F1A4923CC0044E847 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		63E272111A4923CC0044E847 /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 		63E272411A4945B50044E847 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		63E272421A4945B50044E847 /* RightMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightMenuViewController.h; sourceTree = "<group>"; };
 		63E272431A4945B50044E847 /* RightMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightMenuViewController.m; sourceTree = "<group>"; };
+		63E272471A494B940044E847 /* 我的金象-头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的金象-头像.png"; sourceTree = "<group>"; };
+		63E272491A4950850044E847 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		958FC4051A4734C6000B008A /* IntelligentSwitchPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelligentSwitchPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		958FC4081A4734C6000B008A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		958FC40A1A4734C6000B008A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63D52B7B1A4AB23600E789AC /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				63D52B7C1A4AB23600E789AC /* HMSegmentedControl.h */,
+				63D52B7D1A4AB23600E789AC /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
 		63E2720C1A4923CC0044E847 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +266,7 @@
 		958FC40E1A4734C6000B008A /* IntelligentSwitchPro */ = {
 			isa = PBXGroup;
 			children = (
+				63D52B7B1A4AB23600E789AC /* HMSegmentedControl */,
 				63E272321A4923F40044E847 /* Views */,
 				63E2720C1A4923CC0044E847 /* ViewControllers */,
 				E72D50F31A47B737001A3F77 /* Lirbrary */,
@@ -318,6 +333,8 @@
 		958FC4611A473CCA000B008A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				63E272491A4950850044E847 /* user.png */,
+				63E272471A494B940044E847 /* 我的金象-头像.png */,
 				958FC4621A473CCA000B008A /* animation.png */,
 				63E272381A49245D0044E847 /* 1.jpg */,
 				63E272391A49245D0044E847 /* profile3@2x.png */,
@@ -401,6 +418,8 @@
 				958FC4551A47365B000B008A /* menu-button.png in Resources */,
 				958FC4671A473CCA000B008A /* gear.png in Resources */,
 				958FC4211A4734C6000B008A /* Images.xcassets in Resources */,
+				63E2724A1A4950850044E847 /* user.png in Resources */,
+				63E272481A494B940044E847 /* 我的金象-头像.png in Resources */,
 				63E2723B1A49245D0044E847 /* profile3@2x.png in Resources */,
 				63E272371A4923F40044E847 /* PersonHeadView.xib in Resources */,
 				958FC46E1A4756B4000B008A /* Main.Storyboard in Resources */,
@@ -422,7 +441,6 @@
 				958FC4571A47365B000B008A /* SlideNavigationController.m in Sources */,
 				958FC4511A47365B000B008A /* SlideNavigationContorllerAnimatorScale.m in Sources */,
 				63E2722A1A4923CC0044E847 /* ControlViewController.m in Sources */,
-				63E272301A4923CC0044E847 /* SceneViewController.m in Sources */,
 				958FC4521A47365B000B008A /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				63E272441A4945B50044E847 /* HomeViewController.m in Sources */,
 				958FC4191A4734C6000B008A /* AppDelegate.m in Sources */,

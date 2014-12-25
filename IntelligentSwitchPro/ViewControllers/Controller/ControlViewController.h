@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HMSegmentedControl.h"
+#import "SlideNavigationController.h"
 @interface ControlViewController : UIViewController
 
 @end

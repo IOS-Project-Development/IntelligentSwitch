@@ -60,7 +60,7 @@
     person.frame = CGRectMake (20, 30, 320, 50);
     person.backgroundColor = [UIColor grayColor];
     person.nameLabel.text = @"Myname";
-    person.headerImage.image = [UIImage imageNamed:@"1.jpg"];
+    person.headerImage.image = [UIImage imageNamed:@"我的金象-头像.png"];
     self.tableView.tableHeaderView = person;
 }
 #pragma mark - UITableView Delegate & Datasrouce -
